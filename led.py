@@ -2,20 +2,25 @@
 import RPi.GPIO as GPIO
 import time
 
-LedPin = 11
+GreenPin = 11
+RedPin = 13
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(LedPin, GPIO.OUT)
-GPIO.output(LedPin, GPIO.HIGH)
+GPIO.setup(GreenPin, GPIO.OUT)
+GPIO.setup(RedPin, GPIO.OUT)
+GPIO.out(GreenPin, GPIO.HIGH)
+GPIO.output(RedPin, GPIO.HIGH)
 
 try:
     while True:
         print '... led on'
-        GPIO.output(LedPin, GPIO.LOW)
+        GPIO.output(GreenPin, GPIO.HIGH)
+        GPIO.output(RedPin, GPIO.LOW)
         time.sleep(0.5)
         print 'led off ...'
-        GPIO.output(LedPin, GPIO.HIGH)
+        GPIO.output(GreenPin, GPIO.LOW)
+        GPIO.output(RedPin, GPIO.HIGH)
         time.sleep(0.5)
 except KeyboardInterrupt:
-    GPIO.out(LedPin, GPIO.HIGH)
+    GPIO.out(RedPin, GPIO.HIGH)
     GPIO.cleanup();
