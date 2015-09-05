@@ -9,6 +9,7 @@
   "author": "Maik Hummel <yo@beevelop.com> (https://beevelop.com)",
   "license": "ISC",
   "dependencies": {
+    "ds18b20": "0.0.2",
     "pi-gpio": "0.0.7"
   }
 }
