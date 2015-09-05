@@ -1,7 +1,7 @@
 import time
 
 while 1:
-    tempfile = open("/sys/bus/w1/devices/28-021502fe2aff")
+    tempfile = open("/sys/bus/w1/devices/28-021502fe2aff/w1_slave")
     thetext = tempfile.read()
     tempfile.close()
 
