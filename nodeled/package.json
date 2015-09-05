@@ -1,0 +1,14 @@
+{
+  "name": "nodeled",
+  "version": "1.0.0",
+  "description": "",
+  "main": "simpletest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maik Hummel <yo@beevelop.com> (https://beevelop.com)",
+  "license": "ISC",
+  "dependencies": {
+    "pi-gpio": "0.0.7"
+  }
+}
