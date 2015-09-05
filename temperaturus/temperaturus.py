@@ -26,7 +26,7 @@ while 1:
     temperature = temperature / 1000
     print temperature
 
-    if changeTemp > temperature:
+    if float(changeTemp) > temperature:
         GPIO.output(RedPin, GPIO.HIGH)
         GPIO.output(GreenPin, GPIO.LOW)
 
