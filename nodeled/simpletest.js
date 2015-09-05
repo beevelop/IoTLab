@@ -1,6 +1,6 @@
 var gpio = require("pi-gpio");
 
-var pinNum = 0;
+var pinNum = 11;
 
 gpio.open(pinNum, "output", function(err) {     // Open pin 16 for output
     console.log('Opened Pin '+pinNum);
