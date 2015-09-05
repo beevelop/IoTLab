@@ -8,7 +8,7 @@ RedPin = 13
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(GreenPin, GPIO.OUT)
 GPIO.setup(RedPin, GPIO.OUT)
-GPIO.out(GreenPin, GPIO.HIGH)
+GPIO.output(GreenPin, GPIO.HIGH)
 GPIO.output(RedPin, GPIO.HIGH)
 
 try:
