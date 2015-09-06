@@ -1,0 +1,15 @@
+{
+  "name": "travistatus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "travistatus.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maik Hummel <yo@beevelop.com> (https://beevelop.com)",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^0.8.90",
+    "travis-ci": "^2.0.3"
+  }
+}
