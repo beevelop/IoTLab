@@ -30,7 +30,7 @@ five.Board().on("ready", function() {
 
     // Turn it on and set the initial color
     led.on();
-    led.color("#FF0000");
+    led.color("#0000ff");
 
     led.blink(1000);
 
