@@ -1,3 +1,4 @@
+var child_process = require('child_process');
 var Travis = require('travis-ci');
 var travis = new Travis({
     version: '2.0.0'
@@ -37,4 +38,11 @@ function showRepos() {
 function showRepo(repo) {
     var repoName = repo.slug.split('/').slice(-1)[0];
     console.log(repo.last_build_state+': '+repoName);
+
+    child_process.exec('./display "'+repoName+'"', function (err, stdout, stderr){
+        if (err) {
+            console.log("child processes failed with error code: " + err.code);
+        }
+        console.log(stdout);
+    });
 }
