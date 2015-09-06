@@ -1,5 +1,7 @@
+
 // Gasometer
 var request = require('request');
+var five = require("johnny-five");
 
 var sensor = new five.Sensor({
     freq: 420,
@@ -15,7 +17,7 @@ sensor.on("change", function() {
     request({
         method: 'PUT',
         url: 'http://nodered.iot.invx.de:1880/data?type=gas',
-        body: data
+        body: data,
         json: true
     });
 });
